@@ -2,12 +2,19 @@
   "expo": {
     "name": "PrendIA",
     "slug": "PrendIA",
+    "scheme": "prendia",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "PrendIA usa la cámara para sacar fotos de la prenda y la etiqueta.",
+        "NSPhotoLibraryUsageDescription": "PrendIA necesita acceso a tus fotos para elegir una imagen de la prenda.",
+        "NSLocationWhenInUseUsageDescription": "PrendIA usa tu ubicación para calcular la distancia a las tiendas."
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -16,10 +23,36 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "CAMERA",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "PrendIA usa la cámara para sacar fotos de la prenda y la etiqueta."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "PrendIA necesita acceso a tus fotos para elegir una imagen de la prenda."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "PrendIA usa tu ubicación para calcular la distancia a las tiendas."
+        }
+      ]
+    ]
   }
 }

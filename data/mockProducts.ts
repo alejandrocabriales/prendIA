@@ -1,0 +1,1303 @@
+/**
+ * PrendIA — mock product catalog.
+ *
+ * IMPORTANT: this is 100% FICTITIOUS demo data for the MVP / Iteracion 1.
+ * Store names (Zara, H&M, Renner, Stadium, Indian, etc.) are real
+ * Uruguayan/international retail chains used only as recognizable
+ * placeholders -- the specific products, prices and stock shown here are
+ * NOT their real inventory or real prices. Do not treat this file as a
+ * source of truth about any actual store's catalog.
+ *
+ * Coordinates are approximate points around real Montevideo shopping
+ * areas (Punta Carretas, Montevideo Shopping, Nuevocentro, Tres Cruces,
+ * Centro, Pocitos, Carrasco) -- not the stores' literal addresses.
+ *
+ * Deliberately NOT random: several clusters of products share
+ * category/material/style/brand but vary color or title (see the
+ * "campera puffer" cluster) so the similarity engine has real near-
+ * duplicates to rank, not just exact-match-or-nothing.
+ */
+import { MockProduct } from "../types";
+
+export const mockProducts: MockProduct[] = [
+  {
+    "id": "mp-001",
+    "title": "Campera Puffer Negra Classic",
+    "category": "campera",
+    "subcategory": "puffer",
+    "color": "negro",
+    "material": "nylon",
+    "style": "casual",
+    "brand": "Renner",
+    "price": 3050,
+    "sizeAvailable": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "storeName": "H&M",
+    "address": "Punta Carretas Shopping, Local 112, Punta Carretas",
+    "latitude": -34.91571,
+    "longitude": -56.15724,
+    "imageUri": "https://picsum.photos/seed/mp-001/480/480"
+  },
+  {
+    "id": "mp-002",
+    "title": "Campera Puffer Negra Urban",
+    "category": "campera",
+    "subcategory": "puffer",
+    "color": "negro",
+    "material": "nylon",
+    "style": "casual",
+    "brand": "Renner",
+    "price": 3350,
+    "sizeAvailable": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "storeName": "Daniel Cassin",
+    "address": "Av. 18 de Julio 1225, Centro",
+    "latitude": -34.90689,
+    "longitude": -56.18719,
+    "imageUri": "https://picsum.photos/seed/mp-002/480/480"
+  },
+  {
+    "id": "mp-003",
+    "title": "Campera Acolchada Negra Street",
+    "category": "campera",
+    "subcategory": "puffer",
+    "color": "negro",
+    "material": "nylon",
+    "style": "casual",
+    "brand": "Renner",
+    "price": 3650,
+    "sizeAvailable": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "storeName": "Stadium",
+    "address": "Av. 18 de Julio 1618, Centro",
+    "latitude": -34.90837,
+    "longitude": -56.18813,
+    "imageUri": "https://picsum.photos/seed/mp-003/480/480"
+  },
+  {
+    "id": "mp-004",
+    "title": "Campera Puffer Gris Oversize",
+    "category": "campera",
+    "subcategory": "puffer",
+    "color": "gris",
+    "material": "nylon",
+    "style": "casual",
+    "brand": "Renner",
+    "price": 3950,
+    "sizeAvailable": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "storeName": "C&A",
+    "address": "Montevideo Shopping, Local 150, Buceo",
+    "latitude": -34.88308,
+    "longitude": -56.16554,
+    "imageUri": "https://picsum.photos/seed/mp-004/480/480"
+  },
+  {
+    "id": "mp-005",
+    "title": "Campera Impermeable Negra Trail",
+    "category": "campera",
+    "subcategory": "puffer",
+    "color": "negro",
+    "material": "nylon",
+    "style": "casual",
+    "brand": "Renner",
+    "price": 3050,
+    "sizeAvailable": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "storeName": "Adidas Store",
+    "address": "Nuevocentro Shopping, Local 55, Cordón",
+    "latitude": -34.89402,
+    "longitude": -56.17868,
+    "imageUri": "https://picsum.photos/seed/mp-005/480/480"
+  },
+  {
+    "id": "mp-006",
+    "title": "Campera Puffer Negra Cropped",
+    "category": "campera",
+    "subcategory": "puffer",
+    "color": "negro",
+    "material": "nylon",
+    "style": "casual",
+    "brand": "Renner",
+    "price": 3350,
+    "sizeAvailable": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "storeName": "Isadora",
+    "address": "Pocitos, Av. Brasil 2740",
+    "latitude": -34.9117,
+    "longitude": -56.15049,
+    "imageUri": "https://picsum.photos/seed/mp-006/480/480"
+  },
+  {
+    "id": "mp-007",
+    "title": "Campera Acolchada Azul Marino",
+    "category": "campera",
+    "subcategory": "puffer",
+    "color": "azul marino",
+    "material": "nylon",
+    "style": "casual",
+    "brand": "Renner",
+    "price": 3650,
+    "sizeAvailable": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "storeName": "World Trade Center Fashion",
+    "address": "WTC Free Zone, Local 12, Buceo",
+    "latitude": -34.88194,
+    "longitude": -56.16201,
+    "imageUri": "https://picsum.photos/seed/mp-007/480/480"
+  },
+  {
+    "id": "mp-008",
+    "title": "Campera Bomber Verde Militar",
+    "category": "campera",
+    "subcategory": "bomber",
+    "color": "verde",
+    "material": "poliester",
+    "style": "urbano",
+    "brand": "Jack & Jones",
+    "price": 2650,
+    "sizeAvailable": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "storeName": "Nike Store",
+    "address": "Punta Carretas Shopping, Local 30, Punta Carretas",
+    "latitude": -34.91576,
+    "longitude": -56.15872,
+    "imageUri": "https://picsum.photos/seed/mp-008/480/480"
+  },
+  {
+    "id": "mp-009",
+    "title": "Campera Bomber Negra Clasica",
+    "category": "campera",
+    "subcategory": "bomber",
+    "color": "negro",
+    "material": "poliester",
+    "style": "urbano",
+    "brand": "Jack & Jones",
+    "price": 2950,
+    "sizeAvailable": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "storeName": "Dexter",
+    "address": "Av. 18 de Julio 1420, Centro",
+    "latitude": -34.90896,
+    "longitude": -56.18639,
+    "imageUri": "https://picsum.photos/seed/mp-009/480/480"
+  },
+  {
+    "id": "mp-010",
+    "title": "Campera Parka Beige Capucha",
+    "category": "campera",
+    "subcategory": "bomber",
+    "color": "beige",
+    "material": "poliester",
+    "style": "urbano",
+    "brand": "Jack & Jones",
+    "price": 3250,
+    "sizeAvailable": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "storeName": "Portones Boutique",
+    "address": "Portones Shopping, Local 20, Carrasco",
+    "latitude": -34.85661,
+    "longitude": -56.11207,
+    "imageUri": "https://picsum.photos/seed/mp-010/480/480"
+  },
+  {
+    "id": "mp-011",
+    "title": "Campera Parka Verde Oliva",
+    "category": "campera",
+    "subcategory": "bomber",
+    "color": "verde",
+    "material": "poliester",
+    "style": "urbano",
+    "brand": "Jack & Jones",
+    "price": 3550,
+    "sizeAvailable": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "storeName": "Zara",
+    "address": "Montevideo Shopping, Local 201, Buceo",
+    "latitude": -34.88466,
+    "longitude": -56.16403,
+    "imageUri": "https://picsum.photos/seed/mp-011/480/480"
+  },
+  {
+    "id": "mp-012",
+    "title": "Campera Jean Clasica Azul",
+    "category": "campera",
+    "subcategory": "denim",
+    "color": "azul",
+    "material": "denim",
+    "style": "casual",
+    "brand": "Indian",
+    "price": 2450,
+    "sizeAvailable": [
+      "S",
+      "M",
+      "L"
+    ],
+    "storeName": "Portones Boutique",
+    "address": "Portones Shopping, Local 20, Carrasco",
+    "latitude": -34.85888,
+    "longitude": -56.11227,
+    "imageUri": "https://picsum.photos/seed/mp-012/480/480"
+  },
+  {
+    "id": "mp-013",
+    "title": "Campera Jean Oversize Celeste",
+    "category": "campera",
+    "subcategory": "denim",
+    "color": "celeste",
+    "material": "denim",
+    "style": "casual",
+    "brand": "Indian",
+    "price": 2750,
+    "sizeAvailable": [
+      "S",
+      "M",
+      "L"
+    ],
+    "storeName": "Zara",
+    "address": "Montevideo Shopping, Local 201, Buceo",
+    "latitude": -34.88468,
+    "longitude": -56.16573,
+    "imageUri": "https://picsum.photos/seed/mp-013/480/480"
+  },
+  {
+    "id": "mp-014",
+    "title": "Campera Denim Negra",
+    "category": "campera",
+    "subcategory": "denim",
+    "color": "negro",
+    "material": "denim",
+    "style": "casual",
+    "brand": "Indian",
+    "price": 3050,
+    "sizeAvailable": [
+      "S",
+      "M",
+      "L"
+    ],
+    "storeName": "Renner",
+    "address": "Nuevocentro Shopping, Local 88, Cordón",
+    "latitude": -34.89767,
+    "longitude": -56.17805,
+    "imageUri": "https://picsum.photos/seed/mp-014/480/480"
+  },
+  {
+    "id": "mp-015",
+    "title": "Remera Basica Blanca",
+    "category": "remera",
+    "subcategory": "basica",
+    "color": "blanco",
+    "material": "algodon",
+    "style": "casual",
+    "brand": "H&M",
+    "price": 640,
+    "sizeAvailable": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "storeName": "H&M",
+    "address": "Punta Carretas Shopping, Local 112, Punta Carretas",
+    "latitude": -34.91809,
+    "longitude": -56.1579,
+    "imageUri": "https://picsum.photos/seed/mp-015/480/480"
+  },
+  {
+    "id": "mp-016",
+    "title": "Remera Basica Negra",
+    "category": "remera",
+    "subcategory": "basica",
+    "color": "negro",
+    "material": "algodon",
+    "style": "casual",
+    "brand": "H&M",
+    "price": 940,
+    "sizeAvailable": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "storeName": "Daniel Cassin",
+    "address": "Av. 18 de Julio 1225, Centro",
+    "latitude": -34.90614,
+    "longitude": -56.18709,
+    "imageUri": "https://picsum.photos/seed/mp-016/480/480"
+  },
+  {
+    "id": "mp-017",
+    "title": "Remera Oversize Gris",
+    "category": "remera",
+    "subcategory": "basica",
+    "color": "gris",
+    "material": "algodon",
+    "style": "casual",
+    "brand": "H&M",
+    "price": 1240,
+    "sizeAvailable": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "storeName": "Stadium",
+    "address": "Av. 18 de Julio 1618, Centro",
+    "latitude": -34.90744,
+    "longitude": -56.18645,
+    "imageUri": "https://picsum.photos/seed/mp-017/480/480"
+  },
+  {
+    "id": "mp-018",
+    "title": "Remera Estampada Blanca Logo",
+    "category": "remera",
+    "subcategory": "basica",
+    "color": "blanco",
+    "material": "algodon",
+    "style": "casual",
+    "brand": "H&M",
+    "price": 1540,
+    "sizeAvailable": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "storeName": "C&A",
+    "address": "Montevideo Shopping, Local 150, Buceo",
+    "latitude": -34.88458,
+    "longitude": -56.16625,
+    "imageUri": "https://picsum.photos/seed/mp-018/480/480"
+  },
+  {
+    "id": "mp-019",
+    "title": "Remera Estampada Negra Grafica",
+    "category": "remera",
+    "subcategory": "basica",
+    "color": "negro",
+    "material": "algodon",
+    "style": "casual",
+    "brand": "H&M",
+    "price": 640,
+    "sizeAvailable": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "storeName": "Adidas Store",
+    "address": "Nuevocentro Shopping, Local 55, Cordón",
+    "latitude": -34.89709,
+    "longitude": -56.17712,
+    "imageUri": "https://picsum.photos/seed/mp-019/480/480"
+  },
+  {
+    "id": "mp-020",
+    "title": "Remera Basica Bordo",
+    "category": "remera",
+    "subcategory": "basica",
+    "color": "bordo",
+    "material": "algodon",
+    "style": "casual",
+    "brand": "H&M",
+    "price": 940,
+    "sizeAvailable": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "storeName": "Isadora",
+    "address": "Pocitos, Av. Brasil 2740",
+    "latitude": -34.91287,
+    "longitude": -56.14886,
+    "imageUri": "https://picsum.photos/seed/mp-020/480/480"
+  },
+  {
+    "id": "mp-021",
+    "title": "Camisa Denim Celeste",
+    "category": "camisa",
+    "subcategory": "manga larga",
+    "color": "celeste",
+    "material": "algodon",
+    "style": "casual",
+    "brand": "Zara",
+    "price": 1740,
+    "sizeAvailable": [
+      "S",
+      "M",
+      "L"
+    ],
+    "storeName": "C&A",
+    "address": "Montevideo Shopping, Local 150, Buceo",
+    "latitude": -34.885,
+    "longitude": -56.16551,
+    "imageUri": "https://picsum.photos/seed/mp-021/480/480"
+  },
+  {
+    "id": "mp-022",
+    "title": "Camisa Manga Larga Blanca",
+    "category": "camisa",
+    "subcategory": "manga larga",
+    "color": "blanco",
+    "material": "algodon",
+    "style": "casual",
+    "brand": "Zara",
+    "price": 2040,
+    "sizeAvailable": [
+      "S",
+      "M",
+      "L"
+    ],
+    "storeName": "Adidas Store",
+    "address": "Nuevocentro Shopping, Local 55, Cordón",
+    "latitude": -34.89533,
+    "longitude": -56.17755,
+    "imageUri": "https://picsum.photos/seed/mp-022/480/480"
+  },
+  {
+    "id": "mp-023",
+    "title": "Camisa Manga Corta Azul",
+    "category": "camisa",
+    "subcategory": "manga larga",
+    "color": "azul",
+    "material": "algodon",
+    "style": "casual",
+    "brand": "Zara",
+    "price": 2340,
+    "sizeAvailable": [
+      "S",
+      "M",
+      "L"
+    ],
+    "storeName": "Isadora",
+    "address": "Pocitos, Av. Brasil 2740",
+    "latitude": -34.91112,
+    "longitude": -56.14795,
+    "imageUri": "https://picsum.photos/seed/mp-023/480/480"
+  },
+  {
+    "id": "mp-024",
+    "title": "Camisa Cuadros Rojo",
+    "category": "camisa",
+    "subcategory": "manga larga",
+    "color": "rojo",
+    "material": "algodon",
+    "style": "casual",
+    "brand": "Zara",
+    "price": 2640,
+    "sizeAvailable": [
+      "S",
+      "M",
+      "L"
+    ],
+    "storeName": "World Trade Center Fashion",
+    "address": "WTC Free Zone, Local 12, Buceo",
+    "latitude": -34.88417,
+    "longitude": -56.16249,
+    "imageUri": "https://picsum.photos/seed/mp-024/480/480"
+  },
+  {
+    "id": "mp-025",
+    "title": "Camisa Lino Beige",
+    "category": "camisa",
+    "subcategory": "manga larga",
+    "color": "beige",
+    "material": "algodon",
+    "style": "casual",
+    "brand": "Zara",
+    "price": 1740,
+    "sizeAvailable": [
+      "S",
+      "M",
+      "L"
+    ],
+    "storeName": "H&M",
+    "address": "Punta Carretas Shopping, Local 112, Punta Carretas",
+    "latitude": -34.91793,
+    "longitude": -56.15605,
+    "imageUri": "https://picsum.photos/seed/mp-025/480/480"
+  },
+  {
+    "id": "mp-026",
+    "title": "Pantalon Cargo Verde",
+    "category": "pantalon",
+    "subcategory": "cargo",
+    "color": "verde",
+    "material": "algodon",
+    "style": "urbano",
+    "brand": "Stadium",
+    "price": 1840,
+    "sizeAvailable": [
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "storeName": "Portones Boutique",
+    "address": "Portones Shopping, Local 20, Carrasco",
+    "latitude": -34.85851,
+    "longitude": -56.11206,
+    "imageUri": "https://picsum.photos/seed/mp-026/480/480"
+  },
+  {
+    "id": "mp-027",
+    "title": "Pantalon Cargo Beige",
+    "category": "pantalon",
+    "subcategory": "cargo",
+    "color": "beige",
+    "material": "algodon",
+    "style": "urbano",
+    "brand": "Stadium",
+    "price": 2140,
+    "sizeAvailable": [
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "storeName": "Zara",
+    "address": "Montevideo Shopping, Local 201, Buceo",
+    "latitude": -34.88503,
+    "longitude": -56.1677,
+    "imageUri": "https://picsum.photos/seed/mp-027/480/480"
+  },
+  {
+    "id": "mp-028",
+    "title": "Pantalon Chino Gris",
+    "category": "pantalon",
+    "subcategory": "cargo",
+    "color": "gris",
+    "material": "algodon",
+    "style": "urbano",
+    "brand": "Stadium",
+    "price": 2440,
+    "sizeAvailable": [
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "storeName": "Renner",
+    "address": "Nuevocentro Shopping, Local 88, Cordón",
+    "latitude": -34.89468,
+    "longitude": -56.17944,
+    "imageUri": "https://picsum.photos/seed/mp-028/480/480"
+  },
+  {
+    "id": "mp-029",
+    "title": "Pantalon Chino Azul Marino",
+    "category": "pantalon",
+    "subcategory": "cargo",
+    "color": "azul marino",
+    "material": "algodon",
+    "style": "urbano",
+    "brand": "Stadium",
+    "price": 2740,
+    "sizeAvailable": [
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "storeName": "Jack & Jones",
+    "address": "Shopping Tres Cruces, Local 45, Tres Cruces",
+    "latitude": -34.89339,
+    "longitude": -56.16413,
+    "imageUri": "https://picsum.photos/seed/mp-029/480/480"
+  },
+  {
+    "id": "mp-030",
+    "title": "Pantalon Deportivo Negro",
+    "category": "pantalon",
+    "subcategory": "cargo",
+    "color": "negro",
+    "material": "algodon",
+    "style": "urbano",
+    "brand": "Stadium",
+    "price": 1840,
+    "sizeAvailable": [
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "storeName": "Indian",
+    "address": "Punta Carretas Shopping, Local 67, Punta Carretas",
+    "latitude": -34.91572,
+    "longitude": -56.15745,
+    "imageUri": "https://picsum.photos/seed/mp-030/480/480"
+  },
+  {
+    "id": "mp-031",
+    "title": "Jean Skinny Azul Oscuro",
+    "category": "jeans",
+    "subcategory": "skinny",
+    "color": "azul",
+    "material": "denim",
+    "style": "casual",
+    "brand": "Indian",
+    "price": 2140,
+    "sizeAvailable": [
+      "36",
+      "38",
+      "40",
+      "42"
+    ],
+    "storeName": "Daniel Cassin",
+    "address": "Av. 18 de Julio 1225, Centro",
+    "latitude": -34.90732,
+    "longitude": -56.18818,
+    "imageUri": "https://picsum.photos/seed/mp-031/480/480"
+  },
+  {
+    "id": "mp-032",
+    "title": "Jean Skinny Negro",
+    "category": "jeans",
+    "subcategory": "skinny",
+    "color": "negro",
+    "material": "denim",
+    "style": "casual",
+    "brand": "Indian",
+    "price": 2440,
+    "sizeAvailable": [
+      "36",
+      "38",
+      "40",
+      "42"
+    ],
+    "storeName": "Stadium",
+    "address": "Av. 18 de Julio 1618, Centro",
+    "latitude": -34.90674,
+    "longitude": -56.1871,
+    "imageUri": "https://picsum.photos/seed/mp-032/480/480"
+  },
+  {
+    "id": "mp-033",
+    "title": "Jean Recto Azul Medio",
+    "category": "jeans",
+    "subcategory": "skinny",
+    "color": "azul",
+    "material": "denim",
+    "style": "casual",
+    "brand": "Indian",
+    "price": 2740,
+    "sizeAvailable": [
+      "36",
+      "38",
+      "40",
+      "42"
+    ],
+    "storeName": "C&A",
+    "address": "Montevideo Shopping, Local 150, Buceo",
+    "latitude": -34.8856,
+    "longitude": -56.1642,
+    "imageUri": "https://picsum.photos/seed/mp-033/480/480"
+  },
+  {
+    "id": "mp-034",
+    "title": "Jean Mom Celeste",
+    "category": "jeans",
+    "subcategory": "skinny",
+    "color": "celeste",
+    "material": "denim",
+    "style": "casual",
+    "brand": "Indian",
+    "price": 3040,
+    "sizeAvailable": [
+      "36",
+      "38",
+      "40",
+      "42"
+    ],
+    "storeName": "Adidas Store",
+    "address": "Nuevocentro Shopping, Local 55, Cordón",
+    "latitude": -34.89579,
+    "longitude": -56.17768,
+    "imageUri": "https://picsum.photos/seed/mp-034/480/480"
+  },
+  {
+    "id": "mp-035",
+    "title": "Jean Oversize Azul Claro",
+    "category": "jeans",
+    "subcategory": "skinny",
+    "color": "azul claro",
+    "material": "denim",
+    "style": "casual",
+    "brand": "Indian",
+    "price": 2140,
+    "sizeAvailable": [
+      "36",
+      "38",
+      "40",
+      "42"
+    ],
+    "storeName": "Isadora",
+    "address": "Pocitos, Av. Brasil 2740",
+    "latitude": -34.91482,
+    "longitude": -56.14697,
+    "imageUri": "https://picsum.photos/seed/mp-035/480/480"
+  },
+  {
+    "id": "mp-036",
+    "title": "Jean Roto Azul",
+    "category": "jeans",
+    "subcategory": "skinny",
+    "color": "azul",
+    "material": "denim",
+    "style": "casual",
+    "brand": "Indian",
+    "price": 2440,
+    "sizeAvailable": [
+      "36",
+      "38",
+      "40",
+      "42"
+    ],
+    "storeName": "World Trade Center Fashion",
+    "address": "WTC Free Zone, Local 12, Buceo",
+    "latitude": -34.88578,
+    "longitude": -56.16326,
+    "imageUri": "https://picsum.photos/seed/mp-036/480/480"
+  },
+  {
+    "id": "mp-037",
+    "title": "Buzo Canguro Gris Melange",
+    "category": "buzo",
+    "subcategory": "canguro",
+    "color": "gris",
+    "material": "algodon",
+    "style": "casual",
+    "brand": "C&A",
+    "price": 1540,
+    "sizeAvailable": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "storeName": "Adidas Store",
+    "address": "Nuevocentro Shopping, Local 55, Cordón",
+    "latitude": -34.8972,
+    "longitude": -56.17668,
+    "imageUri": "https://picsum.photos/seed/mp-037/480/480"
+  },
+  {
+    "id": "mp-038",
+    "title": "Buzo Canguro Negro",
+    "category": "buzo",
+    "subcategory": "canguro",
+    "color": "negro",
+    "material": "algodon",
+    "style": "casual",
+    "brand": "C&A",
+    "price": 1840,
+    "sizeAvailable": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "storeName": "Isadora",
+    "address": "Pocitos, Av. Brasil 2740",
+    "latitude": -34.91303,
+    "longitude": -56.15065,
+    "imageUri": "https://picsum.photos/seed/mp-038/480/480"
+  },
+  {
+    "id": "mp-039",
+    "title": "Buzo Cuello Redondo Bordo",
+    "category": "buzo",
+    "subcategory": "canguro",
+    "color": "bordo",
+    "material": "algodon",
+    "style": "casual",
+    "brand": "C&A",
+    "price": 2140,
+    "sizeAvailable": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "storeName": "World Trade Center Fashion",
+    "address": "WTC Free Zone, Local 12, Buceo",
+    "latitude": -34.88392,
+    "longitude": -56.16418,
+    "imageUri": "https://picsum.photos/seed/mp-039/480/480"
+  },
+  {
+    "id": "mp-040",
+    "title": "Buzo Oversize Beige",
+    "category": "buzo",
+    "subcategory": "canguro",
+    "color": "beige",
+    "material": "algodon",
+    "style": "casual",
+    "brand": "C&A",
+    "price": 2440,
+    "sizeAvailable": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "storeName": "H&M",
+    "address": "Punta Carretas Shopping, Local 112, Punta Carretas",
+    "latitude": -34.91535,
+    "longitude": -56.15805,
+    "imageUri": "https://picsum.photos/seed/mp-040/480/480"
+  },
+  {
+    "id": "mp-041",
+    "title": "Buzo Canguro Azul",
+    "category": "buzo",
+    "subcategory": "canguro",
+    "color": "azul",
+    "material": "algodon",
+    "style": "casual",
+    "brand": "C&A",
+    "price": 1540,
+    "sizeAvailable": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "storeName": "Daniel Cassin",
+    "address": "Av. 18 de Julio 1225, Centro",
+    "latitude": -34.90722,
+    "longitude": -56.18912,
+    "imageUri": "https://picsum.photos/seed/mp-041/480/480"
+  },
+  {
+    "id": "mp-042",
+    "title": "Sweater Cuello Redondo Camel",
+    "category": "sweater",
+    "subcategory": "cuello redondo",
+    "color": "camel",
+    "material": "lana",
+    "style": "casual",
+    "brand": "Zara",
+    "price": 2040,
+    "sizeAvailable": [
+      "S",
+      "M",
+      "L"
+    ],
+    "storeName": "Zara",
+    "address": "Montevideo Shopping, Local 201, Buceo",
+    "latitude": -34.88628,
+    "longitude": -56.16789,
+    "imageUri": "https://picsum.photos/seed/mp-042/480/480"
+  },
+  {
+    "id": "mp-043",
+    "title": "Sweater Cuello V Gris",
+    "category": "sweater",
+    "subcategory": "cuello redondo",
+    "color": "gris",
+    "material": "lana",
+    "style": "casual",
+    "brand": "Zara",
+    "price": 2340,
+    "sizeAvailable": [
+      "S",
+      "M",
+      "L"
+    ],
+    "storeName": "Renner",
+    "address": "Nuevocentro Shopping, Local 88, Cordón",
+    "latitude": -34.89526,
+    "longitude": -56.17932,
+    "imageUri": "https://picsum.photos/seed/mp-043/480/480"
+  },
+  {
+    "id": "mp-044",
+    "title": "Sweater Trenzado Blanco",
+    "category": "sweater",
+    "subcategory": "cuello redondo",
+    "color": "blanco",
+    "material": "lana",
+    "style": "casual",
+    "brand": "Zara",
+    "price": 2640,
+    "sizeAvailable": [
+      "S",
+      "M",
+      "L"
+    ],
+    "storeName": "Jack & Jones",
+    "address": "Shopping Tres Cruces, Local 45, Tres Cruces",
+    "latitude": -34.89282,
+    "longitude": -56.16568,
+    "imageUri": "https://picsum.photos/seed/mp-044/480/480"
+  },
+  {
+    "id": "mp-045",
+    "title": "Sweater Lana Bordo",
+    "category": "sweater",
+    "subcategory": "cuello redondo",
+    "color": "bordo",
+    "material": "lana",
+    "style": "casual",
+    "brand": "Zara",
+    "price": 2940,
+    "sizeAvailable": [
+      "S",
+      "M",
+      "L"
+    ],
+    "storeName": "Indian",
+    "address": "Punta Carretas Shopping, Local 67, Punta Carretas",
+    "latitude": -34.91802,
+    "longitude": -56.15572,
+    "imageUri": "https://picsum.photos/seed/mp-045/480/480"
+  },
+  {
+    "id": "mp-046",
+    "title": "Vestido Casual Floreado",
+    "category": "vestido",
+    "subcategory": "casual",
+    "color": "estampado",
+    "material": "poliester",
+    "style": "casual",
+    "brand": "Isadora",
+    "price": 2340,
+    "sizeAvailable": [
+      "S",
+      "M",
+      "L"
+    ],
+    "storeName": "Jack & Jones",
+    "address": "Shopping Tres Cruces, Local 45, Tres Cruces",
+    "latitude": -34.89348,
+    "longitude": -56.16582,
+    "imageUri": "https://picsum.photos/seed/mp-046/480/480"
+  },
+  {
+    "id": "mp-047",
+    "title": "Vestido Negro Basico",
+    "category": "vestido",
+    "subcategory": "casual",
+    "color": "negro",
+    "material": "poliester",
+    "style": "casual",
+    "brand": "Isadora",
+    "price": 2640,
+    "sizeAvailable": [
+      "S",
+      "M",
+      "L"
+    ],
+    "storeName": "Indian",
+    "address": "Punta Carretas Shopping, Local 67, Punta Carretas",
+    "latitude": -34.91894,
+    "longitude": -56.15617,
+    "imageUri": "https://picsum.photos/seed/mp-047/480/480"
+  },
+  {
+    "id": "mp-048",
+    "title": "Vestido Largo Estampado",
+    "category": "vestido",
+    "subcategory": "casual",
+    "color": "estampado",
+    "material": "poliester",
+    "style": "casual",
+    "brand": "Isadora",
+    "price": 2940,
+    "sizeAvailable": [
+      "S",
+      "M",
+      "L"
+    ],
+    "storeName": "Nike Store",
+    "address": "Punta Carretas Shopping, Local 30, Punta Carretas",
+    "latitude": -34.91649,
+    "longitude": -56.15653,
+    "imageUri": "https://picsum.photos/seed/mp-048/480/480"
+  },
+  {
+    "id": "mp-049",
+    "title": "Vestido Fiesta Rojo",
+    "category": "vestido",
+    "subcategory": "casual",
+    "color": "rojo",
+    "material": "poliester",
+    "style": "casual",
+    "brand": "Isadora",
+    "price": 3240,
+    "sizeAvailable": [
+      "S",
+      "M",
+      "L"
+    ],
+    "storeName": "Dexter",
+    "address": "Av. 18 de Julio 1420, Centro",
+    "latitude": -34.90848,
+    "longitude": -56.185,
+    "imageUri": "https://picsum.photos/seed/mp-049/480/480"
+  },
+  {
+    "id": "mp-050",
+    "title": "Falda Midi Negra",
+    "category": "falda",
+    "subcategory": "midi",
+    "color": "negro",
+    "material": "poliester",
+    "style": "casual",
+    "brand": "H&M",
+    "price": 1440,
+    "sizeAvailable": [
+      "S",
+      "M",
+      "L"
+    ],
+    "storeName": "Nike Store",
+    "address": "Punta Carretas Shopping, Local 30, Punta Carretas",
+    "latitude": -34.91586,
+    "longitude": -56.15771,
+    "imageUri": "https://picsum.photos/seed/mp-050/480/480"
+  },
+  {
+    "id": "mp-051",
+    "title": "Falda Plisada Beige",
+    "category": "falda",
+    "subcategory": "midi",
+    "color": "beige",
+    "material": "poliester",
+    "style": "casual",
+    "brand": "H&M",
+    "price": 1740,
+    "sizeAvailable": [
+      "S",
+      "M",
+      "L"
+    ],
+    "storeName": "Dexter",
+    "address": "Av. 18 de Julio 1420, Centro",
+    "latitude": -34.90622,
+    "longitude": -56.18654,
+    "imageUri": "https://picsum.photos/seed/mp-051/480/480"
+  },
+  {
+    "id": "mp-052",
+    "title": "Falda Mini Denim",
+    "category": "falda",
+    "subcategory": "midi",
+    "color": "azul",
+    "material": "poliester",
+    "style": "casual",
+    "brand": "H&M",
+    "price": 2040,
+    "sizeAvailable": [
+      "S",
+      "M",
+      "L"
+    ],
+    "storeName": "Portones Boutique",
+    "address": "Portones Shopping, Local 20, Carrasco",
+    "latitude": -34.85924,
+    "longitude": -56.11301,
+    "imageUri": "https://picsum.photos/seed/mp-052/480/480"
+  },
+  {
+    "id": "mp-053",
+    "title": "Zapatillas Urbanas Blancas",
+    "category": "zapatillas",
+    "subcategory": "urbanas",
+    "color": "blanco",
+    "material": "cuero sintetico",
+    "style": "deportivo",
+    "brand": "Nike",
+    "price": 3340,
+    "sizeAvailable": [
+      "38",
+      "39",
+      "40",
+      "41",
+      "42"
+    ],
+    "storeName": "Isadora",
+    "address": "Pocitos, Av. Brasil 2740",
+    "latitude": -34.91473,
+    "longitude": -56.14802,
+    "imageUri": "https://picsum.photos/seed/mp-053/480/480"
+  },
+  {
+    "id": "mp-054",
+    "title": "Zapatillas Running Negras",
+    "category": "zapatillas",
+    "subcategory": "urbanas",
+    "color": "negro",
+    "material": "cuero sintetico",
+    "style": "deportivo",
+    "brand": "Nike",
+    "price": 3640,
+    "sizeAvailable": [
+      "38",
+      "39",
+      "40",
+      "41",
+      "42"
+    ],
+    "storeName": "World Trade Center Fashion",
+    "address": "WTC Free Zone, Local 12, Buceo",
+    "latitude": -34.88439,
+    "longitude": -56.16116,
+    "imageUri": "https://picsum.photos/seed/mp-054/480/480"
+  },
+  {
+    "id": "mp-055",
+    "title": "Zapatillas Skate Negras",
+    "category": "zapatillas",
+    "subcategory": "urbanas",
+    "color": "negro",
+    "material": "cuero sintetico",
+    "style": "deportivo",
+    "brand": "Nike",
+    "price": 3940,
+    "sizeAvailable": [
+      "38",
+      "39",
+      "40",
+      "41",
+      "42"
+    ],
+    "storeName": "H&M",
+    "address": "Punta Carretas Shopping, Local 112, Punta Carretas",
+    "latitude": -34.91618,
+    "longitude": -56.15773,
+    "imageUri": "https://picsum.photos/seed/mp-055/480/480"
+  },
+  {
+    "id": "mp-056",
+    "title": "Zapatillas Urbanas Grises",
+    "category": "zapatillas",
+    "subcategory": "urbanas",
+    "color": "gris",
+    "material": "cuero sintetico",
+    "style": "deportivo",
+    "brand": "Nike",
+    "price": 4240,
+    "sizeAvailable": [
+      "38",
+      "39",
+      "40",
+      "41",
+      "42"
+    ],
+    "storeName": "Daniel Cassin",
+    "address": "Av. 18 de Julio 1225, Centro",
+    "latitude": -34.90662,
+    "longitude": -56.1896,
+    "imageUri": "https://picsum.photos/seed/mp-056/480/480"
+  },
+  {
+    "id": "mp-057",
+    "title": "Zapatillas Running Blancas Suela Alta",
+    "category": "zapatillas",
+    "subcategory": "urbanas",
+    "color": "blanco",
+    "material": "cuero sintetico",
+    "style": "deportivo",
+    "brand": "Nike",
+    "price": 3340,
+    "sizeAvailable": [
+      "38",
+      "39",
+      "40",
+      "41",
+      "42"
+    ],
+    "storeName": "Stadium",
+    "address": "Av. 18 de Julio 1618, Centro",
+    "latitude": -34.90684,
+    "longitude": -56.18906,
+    "imageUri": "https://picsum.photos/seed/mp-057/480/480"
+  },
+  {
+    "id": "mp-058",
+    "title": "Zapatillas Deportivas Negras",
+    "category": "zapatillas",
+    "subcategory": "deportivas",
+    "color": "negro",
+    "material": "cuero sintetico",
+    "style": "deportivo",
+    "brand": "Adidas",
+    "price": 3140,
+    "sizeAvailable": [
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "storeName": "Renner",
+    "address": "Nuevocentro Shopping, Local 88, Cordón",
+    "latitude": -34.89651,
+    "longitude": -56.17784,
+    "imageUri": "https://picsum.photos/seed/mp-058/480/480"
+  },
+  {
+    "id": "mp-059",
+    "title": "Zapatillas Deportivas Blancas Franjas",
+    "category": "zapatillas",
+    "subcategory": "deportivas",
+    "color": "blanco",
+    "material": "cuero sintetico",
+    "style": "deportivo",
+    "brand": "Adidas",
+    "price": 3440,
+    "sizeAvailable": [
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "storeName": "Jack & Jones",
+    "address": "Shopping Tres Cruces, Local 45, Tres Cruces",
+    "latitude": -34.892,
+    "longitude": -56.16536,
+    "imageUri": "https://picsum.photos/seed/mp-059/480/480"
+  }
+];

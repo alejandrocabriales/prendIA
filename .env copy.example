@@ -1,0 +1,8 @@
+# Copy this file to .env and fill in your key to use real AI vision analysis.
+# Without it, aiVision.ts automatically falls back to a mock response so
+# the whole app flow (camera -> loading -> results) still works for testing.
+#
+# WARNING: this key gets bundled into the app and is visible to anyone who
+# inspects the binary/network traffic. Fine for this local MVP, NOT fine
+# for a production build — see the note at the top of services/aiVision.ts.
+EXPO_PUBLIC_OPENAI_API_KEY=
