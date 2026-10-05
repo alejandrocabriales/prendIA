@@ -1,0 +1,60 @@
+id,title,category,subcategory,color,material,style,brand,price,sizeAvailable,storeName,address,latitude,longitude,imageUri
+mp-001,Campera Puffer Negra Classic,campera,puffer,negro,nylon,casual,Renner,3050,S;M;L;XL,H&M,"Punta Carretas Shopping, Local 112, Punta Carretas",-34.91571,-56.15724,https://picsum.photos/seed/mp-001/480/480
+mp-002,Campera Puffer Negra Urban,campera,puffer,negro,nylon,casual,Renner,3350,S;M;L;XL,Daniel Cassin,"Av. 18 de Julio 1225, Centro",-34.90689,-56.18719,https://picsum.photos/seed/mp-002/480/480
+mp-003,Campera Acolchada Negra Street,campera,puffer,negro,nylon,casual,Renner,3650,S;M;L;XL,Stadium,"Av. 18 de Julio 1618, Centro",-34.90837,-56.18813,https://picsum.photos/seed/mp-003/480/480
+mp-004,Campera Puffer Gris Oversize,campera,puffer,gris,nylon,casual,Renner,3950,S;M;L;XL,C&A,"Montevideo Shopping, Local 150, Buceo",-34.88308,-56.16554,https://picsum.photos/seed/mp-004/480/480
+mp-005,Campera Impermeable Negra Trail,campera,puffer,negro,nylon,casual,Renner,3050,S;M;L;XL,Adidas Store,"Nuevocentro Shopping, Local 55, Cordón",-34.89402,-56.17868,https://picsum.photos/seed/mp-005/480/480
+mp-006,Campera Puffer Negra Cropped,campera,puffer,negro,nylon,casual,Renner,3350,S;M;L;XL,Isadora,"Pocitos, Av. Brasil 2740",-34.9117,-56.15049,https://picsum.photos/seed/mp-006/480/480
+mp-007,Campera Acolchada Azul Marino,campera,puffer,azul marino,nylon,casual,Renner,3650,S;M;L;XL,World Trade Center Fashion,"WTC Free Zone, Local 12, Buceo",-34.88194,-56.16201,https://picsum.photos/seed/mp-007/480/480
+mp-008,Campera Bomber Verde Militar,campera,bomber,verde,poliester,urbano,Jack & Jones,2650,M;L;XL,Nike Store,"Punta Carretas Shopping, Local 30, Punta Carretas",-34.91576,-56.15872,https://picsum.photos/seed/mp-008/480/480
+mp-009,Campera Bomber Negra Clasica,campera,bomber,negro,poliester,urbano,Jack & Jones,2950,M;L;XL,Dexter,"Av. 18 de Julio 1420, Centro",-34.90896,-56.18639,https://picsum.photos/seed/mp-009/480/480
+mp-010,Campera Parka Beige Capucha,campera,bomber,beige,poliester,urbano,Jack & Jones,3250,M;L;XL,Portones Boutique,"Portones Shopping, Local 20, Carrasco",-34.85661,-56.11207,https://picsum.photos/seed/mp-010/480/480
+mp-011,Campera Parka Verde Oliva,campera,bomber,verde,poliester,urbano,Jack & Jones,3550,M;L;XL,Zara,"Montevideo Shopping, Local 201, Buceo",-34.88466,-56.16403,https://picsum.photos/seed/mp-011/480/480
+mp-012,Campera Jean Clasica Azul,campera,denim,azul,denim,casual,Indian,2450,S;M;L,Portones Boutique,"Portones Shopping, Local 20, Carrasco",-34.85888,-56.11227,https://picsum.photos/seed/mp-012/480/480
+mp-013,Campera Jean Oversize Celeste,campera,denim,celeste,denim,casual,Indian,2750,S;M;L,Zara,"Montevideo Shopping, Local 201, Buceo",-34.88468,-56.16573,https://picsum.photos/seed/mp-013/480/480
+mp-014,Campera Denim Negra,campera,denim,negro,denim,casual,Indian,3050,S;M;L,Renner,"Nuevocentro Shopping, Local 88, Cordón",-34.89767,-56.17805,https://picsum.photos/seed/mp-014/480/480
+mp-015,Remera Basica Blanca,remera,basica,blanco,algodon,casual,H&M,640,S;M;L;XL,H&M,"Punta Carretas Shopping, Local 112, Punta Carretas",-34.91809,-56.1579,https://picsum.photos/seed/mp-015/480/480
+mp-016,Remera Basica Negra,remera,basica,negro,algodon,casual,H&M,940,S;M;L;XL,Daniel Cassin,"Av. 18 de Julio 1225, Centro",-34.90614,-56.18709,https://picsum.photos/seed/mp-016/480/480
+mp-017,Remera Oversize Gris,remera,basica,gris,algodon,casual,H&M,1240,S;M;L;XL,Stadium,"Av. 18 de Julio 1618, Centro",-34.90744,-56.18645,https://picsum.photos/seed/mp-017/480/480
+mp-018,Remera Estampada Blanca Logo,remera,basica,blanco,algodon,casual,H&M,1540,S;M;L;XL,C&A,"Montevideo Shopping, Local 150, Buceo",-34.88458,-56.16625,https://picsum.photos/seed/mp-018/480/480
+mp-019,Remera Estampada Negra Grafica,remera,basica,negro,algodon,casual,H&M,640,S;M;L;XL,Adidas Store,"Nuevocentro Shopping, Local 55, Cordón",-34.89709,-56.17712,https://picsum.photos/seed/mp-019/480/480
+mp-020,Remera Basica Bordo,remera,basica,bordo,algodon,casual,H&M,940,S;M;L;XL,Isadora,"Pocitos, Av. Brasil 2740",-34.91287,-56.14886,https://picsum.photos/seed/mp-020/480/480
+mp-021,Camisa Denim Celeste,camisa,manga larga,celeste,algodon,casual,Zara,1740,S;M;L,C&A,"Montevideo Shopping, Local 150, Buceo",-34.885,-56.16551,https://picsum.photos/seed/mp-021/480/480
+mp-022,Camisa Manga Larga Blanca,camisa,manga larga,blanco,algodon,casual,Zara,2040,S;M;L,Adidas Store,"Nuevocentro Shopping, Local 55, Cordón",-34.89533,-56.17755,https://picsum.photos/seed/mp-022/480/480
+mp-023,Camisa Manga Corta Azul,camisa,manga larga,azul,algodon,casual,Zara,2340,S;M;L,Isadora,"Pocitos, Av. Brasil 2740",-34.91112,-56.14795,https://picsum.photos/seed/mp-023/480/480
+mp-024,Camisa Cuadros Rojo,camisa,manga larga,rojo,algodon,casual,Zara,2640,S;M;L,World Trade Center Fashion,"WTC Free Zone, Local 12, Buceo",-34.88417,-56.16249,https://picsum.photos/seed/mp-024/480/480
+mp-025,Camisa Lino Beige,camisa,manga larga,beige,algodon,casual,Zara,1740,S;M;L,H&M,"Punta Carretas Shopping, Local 112, Punta Carretas",-34.91793,-56.15605,https://picsum.photos/seed/mp-025/480/480
+mp-026,Pantalon Cargo Verde,pantalon,cargo,verde,algodon,urbano,Stadium,1840,38;40;42;44,Portones Boutique,"Portones Shopping, Local 20, Carrasco",-34.85851,-56.11206,https://picsum.photos/seed/mp-026/480/480
+mp-027,Pantalon Cargo Beige,pantalon,cargo,beige,algodon,urbano,Stadium,2140,38;40;42;44,Zara,"Montevideo Shopping, Local 201, Buceo",-34.88503,-56.1677,https://picsum.photos/seed/mp-027/480/480
+mp-028,Pantalon Chino Gris,pantalon,cargo,gris,algodon,urbano,Stadium,2440,38;40;42;44,Renner,"Nuevocentro Shopping, Local 88, Cordón",-34.89468,-56.17944,https://picsum.photos/seed/mp-028/480/480
+mp-029,Pantalon Chino Azul Marino,pantalon,cargo,azul marino,algodon,urbano,Stadium,2740,38;40;42;44,Jack & Jones,"Shopping Tres Cruces, Local 45, Tres Cruces",-34.89339,-56.16413,https://picsum.photos/seed/mp-029/480/480
+mp-030,Pantalon Deportivo Negro,pantalon,cargo,negro,algodon,urbano,Stadium,1840,38;40;42;44,Indian,"Punta Carretas Shopping, Local 67, Punta Carretas",-34.91572,-56.15745,https://picsum.photos/seed/mp-030/480/480
+mp-031,Jean Skinny Azul Oscuro,jeans,skinny,azul,denim,casual,Indian,2140,36;38;40;42,Daniel Cassin,"Av. 18 de Julio 1225, Centro",-34.90732,-56.18818,https://picsum.photos/seed/mp-031/480/480
+mp-032,Jean Skinny Negro,jeans,skinny,negro,denim,casual,Indian,2440,36;38;40;42,Stadium,"Av. 18 de Julio 1618, Centro",-34.90674,-56.1871,https://picsum.photos/seed/mp-032/480/480
+mp-033,Jean Recto Azul Medio,jeans,skinny,azul,denim,casual,Indian,2740,36;38;40;42,C&A,"Montevideo Shopping, Local 150, Buceo",-34.8856,-56.1642,https://picsum.photos/seed/mp-033/480/480
+mp-034,Jean Mom Celeste,jeans,skinny,celeste,denim,casual,Indian,3040,36;38;40;42,Adidas Store,"Nuevocentro Shopping, Local 55, Cordón",-34.89579,-56.17768,https://picsum.photos/seed/mp-034/480/480
+mp-035,Jean Oversize Azul Claro,jeans,skinny,azul claro,denim,casual,Indian,2140,36;38;40;42,Isadora,"Pocitos, Av. Brasil 2740",-34.91482,-56.14697,https://picsum.photos/seed/mp-035/480/480
+mp-036,Jean Roto Azul,jeans,skinny,azul,denim,casual,Indian,2440,36;38;40;42,World Trade Center Fashion,"WTC Free Zone, Local 12, Buceo",-34.88578,-56.16326,https://picsum.photos/seed/mp-036/480/480
+mp-037,Buzo Canguro Gris Melange,buzo,canguro,gris,algodon,casual,C&A,1540,S;M;L;XL,Adidas Store,"Nuevocentro Shopping, Local 55, Cordón",-34.8972,-56.17668,https://picsum.photos/seed/mp-037/480/480
+mp-038,Buzo Canguro Negro,buzo,canguro,negro,algodon,casual,C&A,1840,S;M;L;XL,Isadora,"Pocitos, Av. Brasil 2740",-34.91303,-56.15065,https://picsum.photos/seed/mp-038/480/480
+mp-039,Buzo Cuello Redondo Bordo,buzo,canguro,bordo,algodon,casual,C&A,2140,S;M;L;XL,World Trade Center Fashion,"WTC Free Zone, Local 12, Buceo",-34.88392,-56.16418,https://picsum.photos/seed/mp-039/480/480
+mp-040,Buzo Oversize Beige,buzo,canguro,beige,algodon,casual,C&A,2440,S;M;L;XL,H&M,"Punta Carretas Shopping, Local 112, Punta Carretas",-34.91535,-56.15805,https://picsum.photos/seed/mp-040/480/480
+mp-041,Buzo Canguro Azul,buzo,canguro,azul,algodon,casual,C&A,1540,S;M;L;XL,Daniel Cassin,"Av. 18 de Julio 1225, Centro",-34.90722,-56.18912,https://picsum.photos/seed/mp-041/480/480
+mp-042,Sweater Cuello Redondo Camel,sweater,cuello redondo,camel,lana,casual,Zara,2040,S;M;L,Zara,"Montevideo Shopping, Local 201, Buceo",-34.88628,-56.16789,https://picsum.photos/seed/mp-042/480/480
+mp-043,Sweater Cuello V Gris,sweater,cuello redondo,gris,lana,casual,Zara,2340,S;M;L,Renner,"Nuevocentro Shopping, Local 88, Cordón",-34.89526,-56.17932,https://picsum.photos/seed/mp-043/480/480
+mp-044,Sweater Trenzado Blanco,sweater,cuello redondo,blanco,lana,casual,Zara,2640,S;M;L,Jack & Jones,"Shopping Tres Cruces, Local 45, Tres Cruces",-34.89282,-56.16568,https://picsum.photos/seed/mp-044/480/480
+mp-045,Sweater Lana Bordo,sweater,cuello redondo,bordo,lana,casual,Zara,2940,S;M;L,Indian,"Punta Carretas Shopping, Local 67, Punta Carretas",-34.91802,-56.15572,https://picsum.photos/seed/mp-045/480/480
+mp-046,Vestido Casual Floreado,vestido,casual,estampado,poliester,casual,Isadora,2340,S;M;L,Jack & Jones,"Shopping Tres Cruces, Local 45, Tres Cruces",-34.89348,-56.16582,https://picsum.photos/seed/mp-046/480/480
+mp-047,Vestido Negro Basico,vestido,casual,negro,poliester,casual,Isadora,2640,S;M;L,Indian,"Punta Carretas Shopping, Local 67, Punta Carretas",-34.91894,-56.15617,https://picsum.photos/seed/mp-047/480/480
+mp-048,Vestido Largo Estampado,vestido,casual,estampado,poliester,casual,Isadora,2940,S;M;L,Nike Store,"Punta Carretas Shopping, Local 30, Punta Carretas",-34.91649,-56.15653,https://picsum.photos/seed/mp-048/480/480
+mp-049,Vestido Fiesta Rojo,vestido,casual,rojo,poliester,casual,Isadora,3240,S;M;L,Dexter,"Av. 18 de Julio 1420, Centro",-34.90848,-56.185,https://picsum.photos/seed/mp-049/480/480
+mp-050,Falda Midi Negra,falda,midi,negro,poliester,casual,H&M,1440,S;M;L,Nike Store,"Punta Carretas Shopping, Local 30, Punta Carretas",-34.91586,-56.15771,https://picsum.photos/seed/mp-050/480/480
+mp-051,Falda Plisada Beige,falda,midi,beige,poliester,casual,H&M,1740,S;M;L,Dexter,"Av. 18 de Julio 1420, Centro",-34.90622,-56.18654,https://picsum.photos/seed/mp-051/480/480
+mp-052,Falda Mini Denim,falda,midi,azul,poliester,casual,H&M,2040,S;M;L,Portones Boutique,"Portones Shopping, Local 20, Carrasco",-34.85924,-56.11301,https://picsum.photos/seed/mp-052/480/480
+mp-053,Zapatillas Urbanas Blancas,zapatillas,urbanas,blanco,cuero sintetico,deportivo,Nike,3340,38;39;40;41;42,Isadora,"Pocitos, Av. Brasil 2740",-34.91473,-56.14802,https://picsum.photos/seed/mp-053/480/480
+mp-054,Zapatillas Running Negras,zapatillas,urbanas,negro,cuero sintetico,deportivo,Nike,3640,38;39;40;41;42,World Trade Center Fashion,"WTC Free Zone, Local 12, Buceo",-34.88439,-56.16116,https://picsum.photos/seed/mp-054/480/480
+mp-055,Zapatillas Skate Negras,zapatillas,urbanas,negro,cuero sintetico,deportivo,Nike,3940,38;39;40;41;42,H&M,"Punta Carretas Shopping, Local 112, Punta Carretas",-34.91618,-56.15773,https://picsum.photos/seed/mp-055/480/480
+mp-056,Zapatillas Urbanas Grises,zapatillas,urbanas,gris,cuero sintetico,deportivo,Nike,4240,38;39;40;41;42,Daniel Cassin,"Av. 18 de Julio 1225, Centro",-34.90662,-56.1896,https://picsum.photos/seed/mp-056/480/480
+mp-057,Zapatillas Running Blancas Suela Alta,zapatillas,urbanas,blanco,cuero sintetico,deportivo,Nike,3340,38;39;40;41;42,Stadium,"Av. 18 de Julio 1618, Centro",-34.90684,-56.18906,https://picsum.photos/seed/mp-057/480/480
+mp-058,Zapatillas Deportivas Negras,zapatillas,deportivas,negro,cuero sintetico,deportivo,Adidas,3140,38;39;40;41,Renner,"Nuevocentro Shopping, Local 88, Cordón",-34.89651,-56.17784,https://picsum.photos/seed/mp-058/480/480
+mp-059,Zapatillas Deportivas Blancas Franjas,zapatillas,deportivas,blanco,cuero sintetico,deportivo,Adidas,3440,38;39;40;41,Jack & Jones,"Shopping Tres Cruces, Local 45, Tres Cruces",-34.892,-56.16536,https://picsum.photos/seed/mp-059/480/480

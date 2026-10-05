@@ -1,21 +1,14 @@
 /**
- * PrendIA — mock product catalog.
+ * PrendIA — product catalog.
  *
- * IMPORTANT: this is 100% FICTITIOUS demo data for the MVP / Iteracion 1.
- * Store names (Zara, H&M, Renner, Stadium, Indian, etc.) are real
- * Uruguayan/international retail chains used only as recognizable
- * placeholders -- the specific products, prices and stock shown here are
- * NOT their real inventory or real prices. Do not treat this file as a
- * source of truth about any actual store's catalog.
+ * GENERATED FILE — do not edit by hand. Edit data/catalog.csv and run
+ * `npm run build:catalog` to regenerate this file.
  *
- * Coordinates are approximate points around real Montevideo shopping
- * areas (Punta Carretas, Montevideo Shopping, Nuevocentro, Tres Cruces,
- * Centro, Pocitos, Carrasco) -- not the stores' literal addresses.
- *
- * Deliberately NOT random: several clusters of products share
- * category/material/style/brand but vary color or title (see the
- * "campera puffer" cluster) so the similarity engine has real near-
- * duplicates to rank, not just exact-match-or-nothing.
+ * Products loaded from a real seed-store planilla carry that store's
+ * actual data. Any row still sourced from the original fictitious demo
+ * data (Zara, H&M, Renner, etc. used only as recognizable placeholders)
+ * is NOT that chain's real inventory — see data/catalog.csv for which
+ * rows are which.
  */
 import { MockProduct } from "../types";
 
